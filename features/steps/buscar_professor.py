@@ -13,8 +13,8 @@ def step_impl(context):
 
 @when(u'Realizar o login novamente')
 def step_impl(context):
-    user = 'erick.mr'
-    pswd = 'Games2011'
+    user = ''
+    pswd = ''
 
     WebDriverWait(context.driver, 15).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="loginForm"]/table/tbody/tr[1]/td/input'))).send_keys(user)
     WebDriverWait(context.driver, 15).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="loginForm"]/table/tbody/tr[2]/td/input'))).send_keys(pswd)
